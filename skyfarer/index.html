@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyFarer | MK I</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1 class="logo">SkyFarer</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fleet</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="mailto:griffingal269@gmail.com">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <canvas id="canvas"></canvas>
+        <div class="model-info">
+            <h2 id="model-name">Model Name: Cessna</h2>
+            <p>Range: <span id="model-range">2000 km</span></p>
+            <p>Speed: <span id="model-speed">200 knots</span></p>
+            <p>Capacity: <span id="model-capacity">12 seats</span></p>
+            <button onclick="window.loadJetModel('ravenzip.glb')">Load Robinson R44</button>
+            <button onclick="window.loadJetModel('pilatus_pc_1247.glb')">Load Pilatus PC12</button>
+        </div>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+    <footer>
+        <div class="container">
+            <p>Copyright&copy; 2024 SkyFarer. All Rights Reserved. <br>
+                <center>
+                    <img src="/src/Gale.png" alt="Gale Industries Logo" style="max-width: 100px; height: auto;">
+                </center>
+                <br> <b>Is it better to be feared or Respected, I say why not BOTH.</b>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
